@@ -1,0 +1,215 @@
+<!DOCTYPE HTML>
+<!--
+	Future Imperfect by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title> Python </title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="single is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Faizal Jamal</a></h1>
+						<nav class="links">
+							<ul>
+								<li><a href="achievements.html"> Achievements </a></li>
+								<li><a href="arcgis.html"> ArcGIS </a></li>
+								<li><a href="qgis.html"> QGIS </a></li>
+								<li><a href="python.html"> Python </a></li>
+								<li><a href="powerbi.html"> Power BI </a></li>
+							</ul>
+						</nav>
+						<nav class="main">
+							<ul>
+								<li class="search">
+									<a class="fa-search" href="#search">Search</a>
+									<form id="search" method="get" action="#">
+										<input type="text" name="query" placeholder="Search" />
+									</form>
+								</li>
+								<li class="menu">
+									<a class="fa-bars" href="#menu">Menu</a>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2><a href="#"> Arcpy - arcpy.da.SearchCursor </a></h2>
+										<p> Iterate over the rows in an attribute table and print the result </p>
+									</div>
+									<div class="meta">
+										<time class="published" datetime="2023-10-26"> October 26, 2023 </time>
+										<a href="#" class="author"><span class="name"> Faizal Jamal </span><img src="images/avatar.png" alt="" /></a>
+									</div>
+								</header>
+								
+                                <span class="image featured" style="width: 1402px; height: 555px;"> 
+                                    <img src="images/pyIterateRowsTable.png" alt="" />
+                                </span>
+								<p> In this example we are retrieving the values from the field named "County" from the shapefile "counties.shp" </p>
+								<p> We use the builtin function arcpy.da.SearchCursor to attain this. </p>
+
+								<span class="image featured" style="width: 593px; height: 280px;"> 
+                                    <img src="images/pyIterateRows.png" alt="" />
+                                </span>
+                                
+                                <p> The output of the code is shown below: </p>
+                                <span class="image featured" style="width: 469px; height: 165px;"> 
+                                    <img src="images/pyIterateRowsResult.png" alt="" /> 
+                                </span>
+
+							</article>
+
+
+
+							<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2> Arcpy - SQL Clause in SearchCursor </h2>
+										<p> SQL queries can be carried out in Python using the SearchCursor class </p>
+									</div>
+									<div class="meta">
+										<time class="published" datetime="2023-10-26"> October 26, 2023 </time>
+										<a href="#" class="author"><span class="name"> Faizal Jamal </span><img src="images/avatar.png" alt="" /></a>
+									</div>
+								</header>
+
+								<span class="image featured" style="width: 943px; height: 555px;"> 
+                                    <img src="images/pyIterateRowsTableOnly.png" alt="" />
+                                </span>
+
+								<p> 
+                                    In this example, we are retrieving the values based on a condition. <br>
+                                    We are retrieving values where AREA is greater than 1.
+                                </p>
+								<span class="image featured" style="width: 602px; height: 291px;"> 
+                                    <img src="images/pySQLWhere.png" alt="" />
+                                </span>
+
+                                <p> The output of the code is shown below: </p>
+                                <span class="image featured" style="width: 465px; height: 146px;"> 
+                                    <img src="images/pySQLWhereOutput.png" alt="" /> 
+                                </span>
+
+							</article>
+
+
+
+
+							<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2> Arcpy - Selecting a feature </h2>
+										<p> We can use the method arcpy.analysis.Select to extract features from an input feature class or input feature layer. </p>
+									</div>
+									<div class="meta">
+										<time class="published" datetime="2023-10-26"> October 26, 2023 </time>
+										<a href="#" class="author"><span class="name">Faizal Jamal</span><img src="images/avatar.png" alt="" /></a>
+									</div>
+								</header>
+
+								<span class="image featured" style="width: 943px; height: 555px;"> 
+                                    <img src="images/pyIterateRowsTableOnly.png" alt="" />
+                                </span>
+
+								<p>
+                                    The arcpy.analysis.Select method extracts features from an input feature class or input feature layer, 
+                                    typically using a select or Structured Query Language (SQL) expression, and stores them in an output feature class. <br> <br>
+
+                                    In the below code, we are creating a new output layer with Counties that has an AREA > 1
+                                </p>
+								<span class="image featured" style="width: 602px; height: 355px;"> 
+                                    <img src="images/pySelectCode.png" alt="" />
+                                </span>
+
+                                <p> The output of the code is shown below: </p>
+                                <span class="image featured" style="width: 602px; height: 368px;"> 
+                                    <img src="images/pySelectCodeOutput.png" alt="" /> 
+                                </span>
+
+							</article>
+
+
+							<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2> Arcpy - Creating a Polygon </h2>
+
+										<p> 
+                                            Creating a polygon from coordinate values that are stored inside a text file.
+                                        </p>
+									
+                                    </div>
+									<div class="meta">
+										<time class="published" datetime="2023-10-26"> October 26, 2023 </time>
+										<a href="#" class="author"><span class="name">Faizal Jamal</span><img src="images/avatar.png" alt="" /></a>
+									</div>
+								</header>
+
+                                <p> Text file containing all the x and y coordinate values </p>
+								<span class="image featured" style="width: 339px; height: 189px;"> 
+                                    <img src="images/pyPolygonText.png" alt="" />
+                                </span>
+
+								<p>
+                                    The above text file has list of points, each starting with an ID number and followed by x and y co-ordinates. <br>
+                                    The values are separated by a space (“ “). <br>
+                                    We are going to use these coordinates of these points to create a new polygon. <br>
+                                    The coordinate of the first point and the last point are same. <br>
+                                </p>
+
+								<span class="image featured" style="width: 602px; height: 318px;"> 
+                                    <img src="images/pyPolygonCode1.png" alt="" />
+                                </span>
+
+								<span class="image featured" style="width: 602px; height: 445px;"> 
+                                    <img src="images/pyPolygonCode2.png" alt="" />
+                                </span>
+
+
+                                <p> The output of the code is shown below: </p>
+                                <span class="image featured" style="width: 602px; height: 417px;"> 
+                                    <img src="images/pyPolygonOutput.png" alt="" /> 
+                                </span>
+
+							</article>                            
+
+
+
+					</div>
+
+
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
